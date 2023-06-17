@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./Scripts/knapsack.js" defer></script>
+    <script src="./Scripts/quicksort.js" defer></script>
+    <script src="./Scripts/item.js" defer></script>
+    <script src="./Scripts/lista.js" defer></script>
+    <script src="./Scripts/buttons.js" defer></script>
+    <title>Pip-Boy Page</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./Stylesheet/pipboy_style.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./Stylesheet/imgs/iconfallout.png"
+    />
+  </head>
+  <body>
+    <div class="pipboy">
+      <div class="logo">Fallout Stash</div>
+      <div class="screen">
+        <!-- Conteúdo da tela do Pip-Boy aqui -->
+        <div>
+          <p id="resposta-knapsack"></p>
+          <ul class="itemList" id="selectedItemList"></ul>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="button" id="knapsack-button" onclick="optimizeBag()">
+          Knapsack
+        </button>
+        <button class="button" id="inventario-button">Inventário</button>
+      </div>
+    </div>
+  </body>
+</html>

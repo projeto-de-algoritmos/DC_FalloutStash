@@ -1,45 +1,27 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# Fallout Stash
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 9<br>
+**Conteúdo da Disciplina**: Greed<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 19/0093196  |  Mateus Caltabiano Neves Frauzino |
+| 19/0093480  |  Matheus Soares Arruda |
 
 ## Sobre 
 Descreva os objetivos do seu projeto e como ele funciona. 
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![](./Stylesheet/imgs/Screenshot%20from%202023-05-30%2017-47-31.png)
+![](./Stylesheet/imgs/Screenshot%20from%202023-05-30%2017-47-39.png)
+![](./Stylesheet/imgs/Screenshot%20from%202023-05-30%2017-47-53.png)
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: HTML, CSS e Javascript<br>
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Para utilizar nosso projeto, basta abrir a github pages. Na tela inicial temos um texto para ambientar o usuário e um botão "Caps aqui" para abrir a tela do knapsack. Nela, basta selecionar os itens que quer que o algoritmo considere e clicar em "Knapsack", ele vai devolver a melhor otimização que preencha sua mochila de maneira a carregar os itens mais valiosos. Para selecionar outros itens, basta clicar em Inventário.
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-
-
+## [Entrega](./entrega.md)
 
