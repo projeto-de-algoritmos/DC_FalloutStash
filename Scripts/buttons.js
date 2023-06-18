@@ -69,6 +69,8 @@ const filteredItems = [];
 filterForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
+  itensTexto = "";
+
   switch (dropdownOrderType.value) {
     case "caps":
       if (dropdownOrderBy.value === "crescente") {
@@ -116,5 +118,9 @@ filterForm.addEventListener("submit", (event) => {
       break;
   }
 
-  console.log(filteredItems);
+  filteredItems.forEach((item) => {
+    itensTexto += `<li>${item.nome} <br> <img src="./Stylesheet/imgs/weight.png" width = "20px"> ${item.peso} <br> <img src="./Stylesheet/imgs/caps-removebg-preview.png" width = "20px"> ${item.valor} </li>`;
+  });
+
+  knapsackItems.innerHTML = itensTexto;
 });

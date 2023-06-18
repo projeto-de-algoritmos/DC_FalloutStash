@@ -19,6 +19,14 @@ function mergeCapsUp(left, right) {
     if (left[i].valor < right[j].valor) {
       result.push(left[i]);
       i++;
+    } else if (left[i].valor === right[j].valor) {
+      if (left[i].nome < right[j].nome) {
+        result.push(left[i]);
+        i++;
+      } else {
+        result.push(right[j]);
+        j++;
+      }
     } else {
       result.push(right[j]);
       j++;
@@ -49,6 +57,14 @@ function mergeCapsDown(left, right) {
     if (left[i].valor > right[j].valor) {
       result.push(left[i]);
       i++;
+    } else if (left[i].valor === right[j].valor) {
+      if (left[i].nome < right[i].nome) {
+        result.push(left[i]);
+        i++;
+      } else {
+        result.push(right[j]);
+        j++;
+      }
     } else {
       result.push(right[j]);
       j++;
@@ -139,6 +155,14 @@ function mergePesoUp(left, right) {
     if (left[i].peso < right[j].peso) {
       result.push(left[i]);
       i++;
+    } else if (left[i].peso === right[j].peso) {
+      if (left[i].nome < right[j].nome) {
+        result.push(left[i]);
+        i++;
+      } else {
+        result.push(right[j]);
+        j++;
+      }
     } else {
       result.push(right[j]);
       j++;
@@ -169,6 +193,14 @@ function mergePesoDown(left, right) {
     if (left[i].peso > right[j].peso) {
       result.push(left[i]);
       i++;
+    } else if (left[i].peso === right[j].peso) {
+      if (left[i].nome < right[j].nome) {
+        result.push(left[i]);
+        i++;
+      } else {
+        result.push(right[j]);
+        j++;
+      }
     } else {
       result.push(right[j]);
       j++;
