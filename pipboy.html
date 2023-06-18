@@ -21,6 +21,17 @@
   <body>
     <div class="pipboy">
       <div class="logo">Fallout Stash</div>
+      <div class="filters">
+        <form>
+          <label for="orderType">Ordenação por:</label>
+          <select name="orderType" id="orderType">
+            <option value="peso">Peso</option>
+            <option value="caps">Caps</option>
+            <option value="nome">Nome</option>
+          </select>
+          <button class="button">Ordenar</button>
+        </form>
+      </div>
       <div class="screen">
         <!-- Conteúdo da tela do Pip-Boy aqui -->
         <div>

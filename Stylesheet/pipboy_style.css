@@ -125,3 +125,8 @@ button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+.filters {
+  position: relative;
+  left: 600px;
+}
