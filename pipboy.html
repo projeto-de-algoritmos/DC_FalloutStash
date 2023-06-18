@@ -3,6 +3,7 @@
   <head>
     <script src="./Scripts/knapsack.js" defer></script>
     <script src="./Scripts/quicksort.js" defer></script>
+    <script src="./Scripts/mergesort.js" defer></script>
     <script src="./Scripts/item.js" defer></script>
     <script src="./Scripts/lista.js" defer></script>
     <script src="./Scripts/buttons.js" defer></script>
@@ -22,14 +23,18 @@
     <div class="pipboy">
       <div class="logo">Fallout Stash</div>
       <div class="filters">
-        <form>
+        <form id="filter-form" style="display: none">
           <label for="orderType">Ordenação por:</label>
           <select name="orderType" id="orderType">
-            <option value="peso">Peso</option>
             <option value="caps">Caps</option>
             <option value="nome">Nome</option>
+            <option value="peso">Peso</option>
           </select>
-          <button class="button">Ordenar</button>
+          <select name="orderBy" id="orderBy">
+            <option value="crescente">Crescente</option>
+            <option value="descrescente">Descrescente</option>
+          </select>
+          <input type="submit" class="button" value="Ordenar" />
         </form>
       </div>
       <div class="screen">

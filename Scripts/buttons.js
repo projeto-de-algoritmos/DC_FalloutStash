@@ -2,11 +2,12 @@
 const knapsackButton = document.querySelector("#knapsack-button");
 const knapsackAnswer = document.querySelector("#resposta-knapsack");
 const knapsackItems = document.querySelector("#selectedItemList");
+const itensSelecionados = [];
+let itensTexto = "";
 
 //utitliza o Knapsack para devolver os elementos de maior valor que preencham a mochila ao clicar no botão "knapsack"
 const optimizeBag = () => {
   const activeList = document.querySelectorAll(".active");
-  const itensSelecionados = [];
   let itemID = 0;
 
   activeList.forEach((item) => {
@@ -22,8 +23,6 @@ const optimizeBag = () => {
     itensSelecionadosOrdenados,
     0
   ).then((result) => {
-    let itensTexto = "";
-
     result.itens_selecionados.forEach((item) => {
       itensTexto += `<li>${item.nome} <br> <img src="./Stylesheet/imgs/weight.png" width = "20px"> ${item.peso} <br> <img src="./Stylesheet/imgs/caps-removebg-preview.png" width = "20px"> ${item.valor} </li>`;
     });
@@ -39,6 +38,7 @@ const optimizeBag = () => {
     knapsackAnswer.innerHTML = resultTexto;
     knapsackItems.innerHTML = itensTexto;
     knapsackButton.setAttribute("disabled", "true");
+    filterForm.setAttribute("style", "display: show");
   });
 };
 
@@ -58,4 +58,63 @@ const inventarioButton = document.querySelector("#inventario-button");
 //recarrega a página ao clicar no botão para mostrar o inventário novamente
 inventarioButton.addEventListener("click", (event) => {
   location.reload();
+});
+
+//VARIÁVEIS E FUNÇÕES DO FORM FILTRO
+const filterForm = document.querySelector("#filter-form");
+const dropdownOrderType = document.querySelector("#orderType");
+const dropdownOrderBy = document.querySelector("#orderBy");
+const filteredItems = [];
+
+filterForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  switch (dropdownOrderType.value) {
+    case "caps":
+      if (dropdownOrderBy.value === "crescente") {
+        filteredItems.length = 0;
+        mergeSortCapsUp(itensSelecionados).forEach((item) => {
+          filteredItems.push(item);
+        });
+      } else {
+        filteredItems.length = 0;
+        mergeSortCapsDown(itensSelecionados).forEach((item) => {
+          filteredItems.push(item);
+        });
+      }
+      break;
+
+    case "nome":
+      if (dropdownOrderBy.value === "crescente") {
+        filteredItems.length = 0;
+        mergeSortNomeUp(itensSelecionados).forEach((item) => {
+          filteredItems.push(item);
+        });
+      } else {
+        filteredItems.length = 0;
+        mergeSortNomeDown(itensSelecionados).forEach((item) => {
+          filteredItems.push(item);
+        });
+      }
+      break;
+
+    case "peso":
+      if (dropdownOrderBy.value === "crescente") {
+        filteredItems.length = 0;
+        mergeSortPesoUp(itensSelecionados).forEach((item) => {
+          filteredItems.push(item);
+        });
+      } else {
+        filteredItems.length = 0;
+        mergeSortPesoDown(itensSelecionados).forEach((item) => {
+          filteredItems.push(item);
+        });
+      }
+      break;
+
+    default:
+      break;
+  }
+
+  console.log(filteredItems);
 });
