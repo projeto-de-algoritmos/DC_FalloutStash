@@ -21,20 +21,29 @@
   </head>
   <body>
     <div class="pipboy">
-      <div class="logo">Fallout Stash</div>
+      <a href="index.html">
+        <div class="logo">Fallout Stash</div>
+      </a>
+
       <div class="filters">
         <form id="filter-form" style="display: none">
-          <label for="orderType">Ordenação por:</label>
+          <label for="orderType">Ordenação por</label>
           <select name="orderType" id="orderType">
             <option value="caps">Caps</option>
             <option value="nome">Nome</option>
             <option value="peso">Peso</option>
           </select>
+          <label for="orderBy" id="orderBy">em ordem</label>
           <select name="orderBy" id="orderBy">
             <option value="crescente">Crescente</option>
             <option value="descrescente">Descrescente</option>
           </select>
-          <input type="submit" class="button" value="Ordenar" />
+          <input
+            type="submit"
+            class="button"
+            id="submit-button"
+            value="Ordenar"
+          />
         </form>
       </div>
       <div class="screen">
