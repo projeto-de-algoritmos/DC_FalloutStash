@@ -1,7 +1,7 @@
 # Fallout Stash
 
 **Número da Lista**: 9<br>
-**Conteúdo da Disciplina**: Greed<br>
+**Conteúdo da Disciplina**: D&C<br>
 
 ## Alunos
 |Matrícula | Aluno |
