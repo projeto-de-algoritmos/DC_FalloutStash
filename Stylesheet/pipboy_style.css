@@ -127,8 +127,7 @@ button:disabled {
 }
 
 .filters {
-  position: relative;
-  left: 600px;
+  margin-left: 120vh;
 }
 
 label {
@@ -148,4 +147,8 @@ select {
 .button#submit-button {
   position: relative;
   bottom: 5px;
+}
+
+a {
+text-decoration: none;
 }
