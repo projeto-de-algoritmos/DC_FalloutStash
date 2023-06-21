@@ -15,7 +15,7 @@ Nosso projeto tem como objetivo utilizar o algoritmo knapsack para devolver os i
 ## Screenshots
 ![](./Stylesheet/imgs/Screenshot%20from%202023-05-30%2017-47-31.png)
 ![](./Stylesheet/imgs/Screenshot%20from%202023-05-30%2017-47-39.png)
-![](./Stylesheet/imgs/Screenshot%20from%202023-05-30%2017-47-53.png)
+![](./Stylesheet/imgs/imagem_2023-06-20_230118356.png)
 
 ## Instalação 
 **Linguagem**: HTML, CSS e Javascript<br>
