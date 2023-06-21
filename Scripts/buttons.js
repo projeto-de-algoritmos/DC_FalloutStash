@@ -63,7 +63,7 @@ inventarioButton.addEventListener("click", (event) => {
 //VARIÁVEIS E FUNÇÕES DO FORM FILTRO
 const filterForm = document.querySelector("#filter-form");
 const dropdownOrderType = document.querySelector("#orderType");
-const dropdownOrderBy = document.querySelector("#orderBy");
+const dropdownOrderBy = document.querySelector("#orderBy-select");
 const filteredItems = [];
 
 filterForm.addEventListener("submit", (event) => {
